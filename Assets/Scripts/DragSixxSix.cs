@@ -15,16 +15,29 @@ public class DragSixxSix : MonoBehaviour
     void Start()
     {
 
-      
+
 
     }
+
+
+
+
+
+
+
+
+
+
+
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit.transform.CompareTag("Puzzle"))
+
+            // بررسی اینکه آیا hit به یک جسم برخورد کرده است یا خیر
+            if (hit.transform != null && hit.transform.CompareTag("Puzzle"))
             {
                 if (!hit.transform.GetComponent<PiceseSixxSix>().InRightPosition)
                 {
@@ -32,9 +45,6 @@ public class DragSixxSix : MonoBehaviour
                     SelectedPiece.GetComponent<PiceseSixxSix>().Selected = true;
                     SelectedPiece.GetComponent<SortingGroup>().sortingOrder = OIL;
                     OIL++;
-
-
-
                 }
             }
         }
@@ -45,18 +55,26 @@ public class DragSixxSix : MonoBehaviour
             {
                 SelectedPiece.GetComponent<PiceseSixxSix>().Selected = false;
                 SelectedPiece = null;
-
             }
         }
+
         if (SelectedPiece != null)
         {
             Vector3 MousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             SelectedPiece.transform.position = new Vector3(MousePoint.x, MousePoint.y, 0);
         }
+
         if (PlacedPieces == 36)
         {
-            EndMenu.SetActive(true);
+            if (EndMenu != null)
+            {
+                EndMenu.SetActive(true);
+            }
+            else
+            {
+                Debug.LogError("EndMenu is not assigned!");
+            }
         }
+
     }
- 
 }
