@@ -19,24 +19,24 @@ public class MoveToNextLevel : MonoBehaviour
 
 
 //--------------------------------------------
-//UnlockSpringEsay
-    public void UnlockEsay()
-    {
-        //move to next level
-        SceneManager.LoadScene(nextSceneLoad);
+////UnlockEsay
+//    public void UnlockEsay()
+//    {
+//        //move to next level
+//        SceneManager.LoadScene(nextSceneLoad);
 
 
-        //Setting Int for Index
-        if (nextSceneLoad > PlayerPrefs.GetInt("levelEsay"))
-        {
-            PlayerPrefs.SetInt("levelEsay", nextSceneLoad);
-        }
-    }
+//        //Setting Int for Index
+//        if (nextSceneLoad > PlayerPrefs.GetInt("levelEsay"))
+//        {
+//            PlayerPrefs.SetInt("levelEsay", nextSceneLoad);
+//        }
+//    }
 
 
 //--------------------------------------------------------------------------
 
-
+    //unlock levels
 
     public void UnlockHard()
     {

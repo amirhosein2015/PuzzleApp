@@ -15,10 +15,7 @@ public class DragSixxSix : MonoBehaviour
     void Start()
     {
 
-        //for (int i = 0; i < 36; i++)
-        //{
-        //    GameObject.Find("Piece (" + i + ")").transform.Find("Puzzle").GetComponent<SpriteRenderer>().sprite = Levels[PlayerPrefs.GetInt("Level")];
-        //}
+      
 
     }
 
@@ -61,14 +58,5 @@ public class DragSixxSix : MonoBehaviour
             EndMenu.SetActive(true);
         }
     }
-    //public void NextLevel()
-    //{
-    //    PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level") + 1);
-    //    SceneManager.LoadScene("Game");
-    //}
-
-    //public void BacktoMenu()
-    //{
-    //    SceneManager.LoadScene("Menu");
-    //}
+ 
 }

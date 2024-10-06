@@ -19,11 +19,7 @@ public class DragTwoxTwo : MonoBehaviour
     void Start()
     {
 
-        //for (int i = 0; i < 4; i++)
-        //{
-        //    GameObject.Find("Piece (" + i + ")").transform.Find("Puzzle").GetComponent<SpriteRenderer>().sprite = Levels[PlayerPrefs.GetInt("Level")];
-        //}
-
+      
     }
 
     void Update()
@@ -69,14 +65,3 @@ public class DragTwoxTwo : MonoBehaviour
         }
     }
 }
-//    public void NextLevel()
-//    {
-//        PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level") + 1);
-//        SceneManager.LoadScene("Esay");
-//    }
-
-//    public void BacktoMenu()
-//    {
-//        SceneManager.LoadScene("Main");
-//    }
-//}
