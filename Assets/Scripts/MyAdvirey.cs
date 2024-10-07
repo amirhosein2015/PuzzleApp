@@ -5,8 +5,8 @@ using AdiveryUnity;
 
 public class MyAdvirey : MonoBehaviour
 {
-string APP_ID = "42f8fcf3-7729-42d9-9e74-66750c7ef016";
- string PLACEMENT_ID = "ea8dbbe3-4197-4bc4-9a39-1283f1a11f70";
+string APP_ID = "1111";
+ string PLACEMENT_ID = "1111";
 
 
 
