@@ -1,5 +1,6 @@
 # 🧩 PuzzleApp  
 **A simple and fun puzzle game built with Unity and C#**
+![p-10](https://github.com/user-attachments/assets/1ab51e40-6777-4260-a76c-d4178881070f)
 
 ## 🎮 Overview  
 **PuzzleApp** is a Unity-based puzzle game developed in **C#**, designed to deliver a smooth and engaging gameplay experience with a clean and minimal design.  
